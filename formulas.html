@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- #bbinclude "meta.incl"
+#PAGE_TITLE#="Formulas for evaluation of racquet performance"
+-->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script><meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow."><meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum"><link rel="stylesheet" href="/_assets/css/rr.css" media="screen"><link href="https://www.racquetresearch.info/formulas.html" rel="canonical">
+<title>Formulas for evaluation of racquet performance</title>
+<!-- end bbinclude -->
+<!-- #bbinclude "mathjax.incl" -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+	window.MathJax = {
+	    tex: {
+	        tags: 'all'
+	    }
+	};
+</script>
+<!-- end bbinclude -->
+</head>
+<body id="top">
+<!-- #bbinclude "header.incl" -->
+<div class="container-fluid"><header><div class="page-header"><h1>RACQUET SCIENCE <small>&mdash; using physics to help select a racquet</small></h1></div></header><div class="row"><div class="col-md-9 content"><h2>Formulas for evaluation of racquet performance</h2>
+<!-- end bbinclude -->
+			<p>
+				Derivations of these Formulas: 
+			</p>
+			<table class="table">
+				<tr>
+					<td><a href="torque_formula.html">Torque</a></td>
+					<td><a href="Impulse.html">Impulse Reaction</a></td>
+					<td><a href="shock_formula.html">Shock</a></td>
+					<td><a href="work_formula.html">Work</a></td>
+					<td><a href="shoulder_pull.html">Shoulder Pull</a></td>
+					<td><a href="impact_force.html">Impact Force</a></td>
+				</tr>
+			</table>
+			<p>
+				<a href="derivations.html">Remarks on Formula Derivations</a> 
+			</p>
+			<table class="table">
+				<caption>Variables Used in Formulas</caption>
+				<tbody>
+					<tr>
+						<th><var>M</var></th>
+						<td>=</td>
+						<td> racquet mass, in kilograms </td>
+					</tr>
+					<tr>
+						<th> <var>r</var></th>
+						<td>=</td>
+						<td> distance. in centimeters, from axis of rotation to mass center </td>
+					</tr>
+					<tr>
+						<th> <var>I</var></th>
+						<td>=</td>
+						<td> swingweight of the racquet about the axis of rotation, in kg&middot;cm&sup2; </td>
+					</tr>
+					<tr>
+						<th> <var>d</var></th>
+						<td>=</td>
+						<td> distance, in centimeters, from axis of rotation to point of impact </td>
+					</tr>
+					<tr>
+						<th> <var>b</var></th>
+						<td>=</td>
+						<td> ball mass, in kilograms </td>
+					</tr>
+					<tr>
+						<th> <var>s1</var></th>
+						<td>=</td>
+						<td> initial velocity of the ball, in meters per second </td>
+					</tr>
+					<tr>
+						<th> <var>s2</var></th>
+						<td>=</td>
+						<td> final velocity of the ball, in meters per second </td>
+					</tr>
+					<tr>
+						<th> <var>c</var></th>
+						<td>=</td>
+						<td> coefficient of restitution of the racquet/ball system (racquet bounce) </td>
+					</tr>
+					<tr>
+						<th> <var>t</var></th>
+						<td>=</td>
+						<td> duration of impact (dwell time), in seconds </td>
+					</tr>
+				</tbody>
+			</table>
+<!-- 
+<img src="/_assets/img/formul1.gif" alt="wpe3.gif (6900 bytes)" width="532" height="288"> 
+ -->
+			<p class="text-center well">
+				Sweet Spot (Center of Percussion) (cm from axis of rotation) = <i>I / </i>(<i>M*r</i> ) <a href="derivations.html#Sweet_Spot">Derivation</a> 
+			</p>
+			<p class="text-center well">
+				Moment (Newton.meters about axis of rotation) = <i>M</i>*(<i>r</i>/100)*(9.81) <a href="derivations.html#Moment">Derivation</a> 
+			</p>
+			<p>
+				<img src="/_assets/img/Image25.gif" width="406" height="81" alt=""> 
+			</p>
+			<p class="text-center well">
+				Torsion, or Longitudinal Torque = Moment * Torque <a href="derivations.html#Longitudinal_Torque">Derivation</a> 
+			</p>
+			<p>
+				<img src="/_assets/img/formul2.gif" alt="impulse reaction" width="498" height="65"> 
+			</p>
+			<p>
+				<img src="/_assets/img/Image28.gif" width="786" height="84" alt="shock"> 
+			</p>
+			<p>
+				<img src="/_assets/img/Image27.gif" width="638" height="103" alt="work"> 
+			</p>
+			<p>
+				<img src="/_assets/img/Image26.gif" width="848" height="103" alt="shoulder pull"> 
+			</p>
+			<p class="text-center well">
+				Shoulder Crunch (Newtons) = (2/(0.01<i>*r</i> + 0.61))*(<i>Shock</i>) <a href="derivations.html#Shoulder_Yank">Derivation</a> 
+			</p>
+			<p class="text-center well">
+				Elbow Crunch (Newtons) = (2/(0.01<i>*r</i> + 0.36))*(<i>Shock</i>) <a href="derivations.html#Elbow_Yank">Derivation</a> 
+			</p>
+			<p class="text-center well">
+				Wrist Crunch (Newtons) = (2/(0.01<i>*r</i> + 0.08))*(<i>Shock</i>) 
+			</p>
+			<p class="text-center well">
+				Tip Speed (m/s) = ((2/M) * (Work) * (e / r)&sup2;)^&frac12; e = distance from axis to tip, in cm <a href="derivations.html#Tip_Speed"> Derivation</a> 
+			</p>
+			<p class="text-center well">
+				Impact Force (Newtons acting at mass center due to impact) = (M / t)*{(1 + c)*[(2/M)*(Work)]<sup><sup>&frac12;</sup></sup> - (r/d)*(cs<sub>1</sub> + s<sub>2</sub>)} <a href="impact_force.html">Derivation</a> 
+			</p>
+			<hr>
+			<p>
+				Parallel Axis Theorem for converting RDC swingweight (I<sub>10</sub>) to swingweight about the axis specified for the benchmark condition (I<sub>7</sub> or I<sub>5</sub>, or I<sub>a</sub> which is the I used in the foregoing formulas): 
+			</p>
+			<p class="text-center well">
+				I = I<sub>a</sub> = I<sub>10</sub> + M*[2*(10 - a)*r - (10 - a)&sup2;] <a href="parallel.html">Derivation</a> 
+			</p>
+			<hr>
+			<p>
+				New Balance Point distance (x) from original balance point, resulting from adding weight (m) at a distance (y) from the original balance point of a racquet having an original weight (M). 
+			</p>
+			<p class="text-center well">
+				x = y * (m / (M + m)) <a href="derivations.html#new_balance_point">Derivation</a> 
+			</p>
+<!-- #bbinclude "footer.incl" -->
+</div><!-- /.col-md-9 --><nav class="col-md-3 navbar"><ul class="nav nav-pills nav-stacked"><li><a href="/about_this_site.html">About this Site</a></li><li><a href="/sevencri.html">Introduction to Racquet Science</a></li><li><a href="/idiots_guide.html">Complete Idiot&rsquo;s Guide to Choosing a Racquet</a></li><li><a href="/faq.html">Frequently Asked Questions (FAQ)</a></li><li><a href="/formulas.html">Formulas</a></li><li><a href="/derivations.html">Derivations of Formulas</a></li><li><a href="/rankings/index.html"><b>Racquet Rankings</b></a></li><li><a href="/quality_index.html">Quality Index</a></li><li><a href="/balancetip.html">Customizing Balance</a></li><li><a href="/customizing.html">Matching Racquets</a></li><li><a href="/counterweighting.html">Example</a></li><li><a href="/site.html">Site Contents</a></li><li><a href="/search.html">Search</a></li><li><a href="/links.html">Links</a></li><li><a href="/index.html">Home Page</a></li></ul>
+</nav><!-- /.col-md-3 --></div><!-- /.row --><footer><hr><p class="text-muted">This site is based on the concepts and original Racquet Research website of Wilmot McCutchen.</p></footer></div><!-- /.container-fluid --><script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<!-- end bbinclude -->
+</body>
+</html>

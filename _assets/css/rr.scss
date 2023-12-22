@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body { font-size: 17.5px; }
+
+h1, h2, h3 { font-family: Verdana, sanserif; }
+
+h2
+{
+	color: red;
+	border-bottom: teal;
+	border-width: 0 0 2px 0;
+	border-style: none none solid none;
+	padding-top: 0.1em;
+}
+
+caption { text-align: center; }
+
+.btn-toolbar
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.content
+{
+	background-color: #eee;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+
+.navbar
+{
+	background-color: lightyellow;
+	border: 1px #eee solid;
+	padding-top: 1em;
+}

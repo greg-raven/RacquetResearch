@@ -1,0 +1,3 @@
+# redirect from Netlify to custom domain
+
+https://racquetresearch.netlify.app/* https://www.racquetresearch.info/:splat 301!

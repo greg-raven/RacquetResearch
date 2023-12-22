@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- #bbinclude "meta.incl"
+#PAGE_TITLE#="The Parallel Axis Theorem"
+-->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script><meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow."><meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum"><link rel="stylesheet" href="/_assets/css/rr.css" media="screen"><link href="https://www.racquetresearch.info/parallel.html" rel="canonical">
+<title>The Parallel Axis Theorem</title>
+<!-- end bbinclude -->
+</head>
+<body id="top">
+<!-- #bbinclude "header.incl" -->
+<div class="container-fluid"><header><div class="page-header"><h1>RACQUET SCIENCE <small>&mdash; using physics to help select a racquet</small></h1></div></header><div class="row"><div class="col-md-9 content"><h2>The Parallel Axis Theorem</h2>
+<!-- end bbinclude -->
+			<blockquote>
+				<p>
+					The swingweight of a racquet is measured by the Babolat RDC using an axis of rotation 10 cm from the butt. To find the swingweight about the axis used on the stroke requires application of the Parallel Axis Theorem.
+				</p>
+				<p>
+					Swingweight, also known as moment of inertia and rotational inertia, is the resistance to change in the speed of the rotation about the axis of rotation. High swingweight means that the racquet is hard to get rotating, but once it gets going it will not be pushed around so much on impact with the ball and will tend to produce better pace and spin. Swingweight is the infinite sum of all infinitely small mass elements times the square of their distance from the axis of rotation. Or in mathematical terms,
+				</p>
+				<figure>
+							<img src="/_assets/img/parall1.gif" alt="wpe1.gif (1237 bytes)" width="191" class="img-thumbnail">
+				</figure>
+				<p>
+					Call the known swingweight <b>I</b> (the published RDC measurement) and the unknown swingweight (about the axis of rotation used in the stroke) will be called <b>I&prime;</b>. The swingweight of the racquet about its mass center will be called <b>I<sub>c</sub></b>. The distance of the mass center (balance point of the racquet) from the axis of rotation for the known swingweight is <b>r</b>, and the racquet mass is <b>M</b>. Note that the published mass center radius is measured from the balance point to the butt end, not to the axis of rotation which is 10 cm from the butt end. The distance of the mass center from the new axis of rotation is <b>r + x</b>.
+				</p>
+				<p>
+					The Parallel Axis Theorem (from first year physics) tells us that the swingweight is the sum of the swingweight about the mass center (<b>I<sub>c</sub></b>) plus the product of the mass (M) and the square of the distance (r) from the axis of rotation to the mass center.
+				</p>
+				<p>
+					I = I<sub>c</sub> + Mr&sup2;
+				</p>
+				<p>
+					So once we know the RDC swingweight about the 10 cm axis, we can find the swingweight about any other parallel axis by another application of the Parallel Axis Theorem. The first step is finding the swingweight about an axis through the mass center (I<sub>c</sub>).
+				</p>
+				<blockquote>
+					<blockquote>
+						<p>
+							I = I<sub>c</sub> + Mr&sup2;
+						</p>
+					</blockquote>
+					<blockquote>
+						<p>
+							=&gt; I<sub>c</sub> = I - Mr&sup2;
+						</p>
+					</blockquote>
+				</blockquote>
+				<p>
+					The same holds for the unknown swingweight, which is about a parallel axis that is a distance r + x from the mass center:
+				</p>
+				<blockquote>
+					<blockquote>
+						<p>
+							I&prime; = I<sub>c</sub> + M(r + x)&sup2;
+						</p>
+					</blockquote>
+				</blockquote>
+				<p>
+					Now substitute what we&rsquo;ve already found is equal to <b>I<sub>c</sub></b>:
+				</p>
+				<blockquote>
+					<blockquote>
+						<p>
+							I&prime; = (I - Mr&sup2;) + M(r + x)&sup2;
+						</p>
+					</blockquote>
+				</blockquote>
+				<p>
+					= (I - Mr&sup2;) + M(r&sup2; + 2rx + x&sup2;)
+				</p>
+				<p>
+					Simplifying, we get a general formula for finding the unknown swingweight (I&prime;) about a different axis (r + x):
+				</p>
+			</blockquote>
+			<p class="text-center">
+				I&prime; = I + M(2rx + x&sup2;)
+			</p>
+			<blockquote>
+				<p>
+					For the First Benchmark Condition (groundstroke), the axis of rotation for the stroke is at 7 cm from the handle end, so x is 3. And in the Second Benchmark Condition (serve), the axis is even farther away, and x is 5. The variable r is the published balance point minus 10 cm, but in our formulas we use r, which is the published balance point minus 7 or 5 cm according to which benchmark condition we are using, so we need to substitute in the above formula so we can use r instead of r. We will use another variable (a) to denote the axis used. So:
+				</p>
+				<p>
+					x = 10 - a
+				</p>
+				<p>
+					r = r + (10 - a) =&gt; r = r - (10 - a)
+				</p>
+				<p>
+					When we substitute in the above formula, we get:
+				</p>
+				<p>
+					I&prime; = I + M(2rx + x&sup2;) = I + M[2(r - (10 - a))(10 - a) + (10 - a)&sup2;]
+				</p>
+				<p>
+					Now simplifying the expression in the brackets:
+				</p>
+				<p>
+					[2(r - (10 - a))(10 - a) + (10 - a)&sup2;]
+				</p>
+				<p>
+					= -2ar + 20a - 2a&sup2; + 20r - 200 + 20a + 100 - 20a + a&sup2;
+				</p>
+				<p>
+					= -2ar + 20a - a&sup2; + 20r - 100
+				</p>
+				<p>
+					= 20r - 2ar - 100 + 20a - a&sup2;
+				</p>
+				<p>
+					= 2r(10 - a) - (10 - a)&sup2;
+				</p>
+				<p>
+					So in the formulas, the variable I, which represents the swingweight about the axis used on the stroke, where a is the distance from the butt to the axis, I<sub>10</sub> is the RDC swingweight about the axis 10 cm from the butt, and r is the distance in cm from the mass center (balance point) to the axis used in the stroke:
+				</p>
+				<p>
+					I = I<sub>a</sub> = I<sub>10</sub> + M*[2*(10 - a)*r - (10 - a)&sup2;]
+				</p>
+				<p>
+					a = distance in cm from the butt to the axis of rotation used in the stroke I<sub>10</sub> = RDC swingweight in kg&middot;cm&sup2; about an axis 10 cm from the butt r = distance in cm from mass center (balance point) to axis used in the stroke
+				</p>
+			</blockquote>
+<!-- #bbinclude "footer.incl" -->
+</div><!-- /.col-md-9 --><nav class="col-md-3 navbar"><ul class="nav nav-pills nav-stacked"><li><a href="/about_this_site.html">About this Site</a></li><li><a href="/sevencri.html">Introduction to Racquet Science</a></li><li><a href="/idiots_guide.html">Complete Idiot&rsquo;s Guide to Choosing a Racquet</a></li><li><a href="/faq.html">Frequently Asked Questions (FAQ)</a></li><li><a href="/formulas.html">Formulas</a></li><li><a href="/derivations.html">Derivations of Formulas</a></li><li><a href="/rankings/index.html"><b>Racquet Rankings</b></a></li><li><a href="/quality_index.html">Quality Index</a></li><li><a href="/balancetip.html">Customizing Balance</a></li><li><a href="/customizing.html">Matching Racquets</a></li><li><a href="/counterweighting.html">Example</a></li><li><a href="/site.html">Site Contents</a></li><li><a href="/search.html">Search</a></li><li><a href="/links.html">Links</a></li><li><a href="/index.html">Home Page</a></li></ul>
+</nav><!-- /.col-md-3 --></div><!-- /.row --><footer><hr><p class="text-muted">This site is based on the concepts and original Racquet Research website of Wilmot McCutchen.</p></footer></div><!-- /.container-fluid --><script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<!-- end bbinclude -->
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- #bbinclude "meta.incl"
+#PAGE_TITLE#="Derivation of Impact Force formula"
+-->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script><meta name="description" content="Racquet evaluation and ranking by physics re tennis elbow."><meta name="keywords" content="tennis, tennis elbow, racket, racquet, shock, torque, shoulder, eccentric impact, coefficient of restitution, conservation of momentum"><link rel="stylesheet" href="/_assets/css/rr.css" media="screen"><link href="https://www.racquetresearch.info/impact_force.html" rel="canonical">
+<title>Derivation of Impact Force formula</title>
+<!-- end bbinclude -->
+</head>
+<body id="top">
+<!-- #bbinclude "header.incl" -->
+<div class="container-fluid"><header><div class="page-header"><h1>RACQUET SCIENCE <small>&mdash; using physics to help select a racquet</small></h1></div></header><div class="row"><div class="col-md-9 content"><h2>Derivation of Impact Force formula</h2>
+<!-- end bbinclude -->
+			<p>
+				Work = &frac12; Mv<sub>1</sub>&sup2;
+			</p>
+			<p>
+				=&gt; v<sub>1</sub> = [(2/M)(Work)]<sup><sup>&frac12;</sup></sup>
+			</p>
+			<p>
+				Converting v<sub>1</sub>, the mass center velocity, to initial impact point velocity p<sub>1</sub>:
+			</p>
+			<p>
+				p<sub>1</sub> = (d/r)[(2/M)(Work)]<sup><sup>&frac12;</sup></sup>
+			</p>
+			<p>
+				From the coefficient of restitution formula:
+			</p>
+			<p>
+				p<sub>2</sub> - s<sub>2</sub> = c(s<sub>1</sub> - p<sub>1</sub>)
+			</p>
+			<p>
+				we can find p<sub>2</sub>
+			</p>
+			<p>
+				p<sub>2</sub> = cs<sub>1</sub> + s<sub>2</sub> - cp<sub>1</sub>
+			</p>
+			<p>
+				Now knowing p<sub>1</sub> and p<sub>2</sub>, we can find v<sub>1</sub> - v<sub>2</sub> by multiplying by the ratio of the mass center radius (r) to the impact point distance from the axis (d) and plugging in the derived values of p<sub>1</sub> and p<sub>2</sub>:
+			</p>
+			<p>
+				v<sub>1</sub> - v<sub>2</sub> = (r/d) [p<sub>1</sub> - p<sub>2</sub>]
+			</p>
+			<p>
+				= (r/d) [(d/r)[(2/M)(Work)]<sup><sup>&frac12;</sup></sup> - cs<sub>1</sub> - s<sub>2</sub> + c((d/r)[(2/M)(Work)]<sup><sup>&frac12;</sup></sup>)]
+			</p>
+			<p>
+				Impact Impulse = change in racquet momentum = M (v<sub>1</sub> - v<sub>2</sub>)
+			</p>
+			<p>
+				Impact Impulse = M(r/d)[(d/r)[(2/M)(Work)]<sup><sup>&frac12;</sup></sup> - cs<sub>1</sub> - s<sub>2</sub> + c((d/r)[(2/M)(Work)]<sup><sup>&frac12;</sup></sup>)]
+			</p>
+			<p>
+				Simplifying:
+			</p>
+			<p>
+				Impact Impulse = M{(1 + c)[(2/M)(Work)]<sup><sup>&frac12;</sup></sup> - (r/d)(cs<sub>1</sub> + s<sub>2</sub>)}
+			</p>
+			<p>
+				Impact impulse is measured in momentum units (kg.m/s) and if we divide impact impulse by the time it operates we will have kg.m/s&sup2;, which by Newton&rsquo;s Second Law must be a force, measured in Newtons of force (1 Newton = 0.225 lb). The time to divide by is the dwell time of the ball on the racquet, which we assume to be 0.004 second for all racquets being compared.
+			</p>
+			<p>
+				Impact Force = Impact Impulse/dwell time
+			</p>
+			<p>
+				= (M / t)*{(1 + c)*[(2/M)*(Work)]<sup><sup>&frac12;</sup></sup> - (r/d)*(cs<sub>1</sub> + s<sub>2</sub>)}
+			</p>
+			<p>
+				Impact torque (Torque) is Impact Force times the lever arm on which this force is applied, which is r, the distance from the axis of rotation (the hand) to the racquet&rsquo;s mass center, or balance point. It turns out that the impact torque found from this formula matches the Torque from the formula derived otherwise, so we have corroboration that the Work derivation is correct.
+			</p>
+<!-- #bbinclude "footer.incl" -->
+</div><!-- /.col-md-9 --><nav class="col-md-3 navbar"><ul class="nav nav-pills nav-stacked"><li><a href="/about_this_site.html">About this Site</a></li><li><a href="/sevencri.html">Introduction to Racquet Science</a></li><li><a href="/idiots_guide.html">Complete Idiot&rsquo;s Guide to Choosing a Racquet</a></li><li><a href="/faq.html">Frequently Asked Questions (FAQ)</a></li><li><a href="/formulas.html">Formulas</a></li><li><a href="/derivations.html">Derivations of Formulas</a></li><li><a href="/rankings/index.html"><b>Racquet Rankings</b></a></li><li><a href="/quality_index.html">Quality Index</a></li><li><a href="/balancetip.html">Customizing Balance</a></li><li><a href="/customizing.html">Matching Racquets</a></li><li><a href="/counterweighting.html">Example</a></li><li><a href="/site.html">Site Contents</a></li><li><a href="/search.html">Search</a></li><li><a href="/links.html">Links</a></li><li><a href="/index.html">Home Page</a></li></ul>
+</nav><!-- /.col-md-3 --></div><!-- /.row --><footer><hr><p class="text-muted">This site is based on the concepts and original Racquet Research website of Wilmot McCutchen.</p></footer></div><!-- /.container-fluid --><script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<!-- end bbinclude -->
+</body>
+</html>
